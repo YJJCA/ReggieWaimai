@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reggie?serverTimezone=UTC
+    username: root
+    password: root
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    #驼峰运行法可以识别大小写
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#配置储存目录
+reggie:
+  path: D:\\reggie\\img\\
+
